@@ -10,4 +10,10 @@ class MerchantService < BaseService
 
     get_json(response)
   end
+
+  def self.items(id)
+    response = conn.get("/api/v1/merchants/#{id.to_s}/items")
+    
+    get_json(response)
+  end
 end

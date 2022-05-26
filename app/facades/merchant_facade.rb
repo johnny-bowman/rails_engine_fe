@@ -12,4 +12,8 @@ class MerchantFacade
 
     Merchant.new(json[:data])
   end
+
+  def self.items
+
+  end
 end

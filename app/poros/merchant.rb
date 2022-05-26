@@ -5,4 +5,8 @@ class Merchant
     @id = data[:id]
     @name = data[:attributes][:name]
   end
+
+  def items
+    
+  end
 end
