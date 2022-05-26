@@ -1,10 +1,9 @@
 class MerchantsController < ApplicationController
   def index
-    @merchants = MerchantFacade.info
+    @merchants = MerchantFacade.merchants
   end
 
   def show
-    binding.pry
-    @merchant = 
+    @merchant = MerchantFacade.merchant(params[:id])
   end
 end
