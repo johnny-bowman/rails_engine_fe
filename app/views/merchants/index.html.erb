@@ -1,0 +1,7 @@
+<h2><strong>Merchants: </strong></h2>
+
+<ul>
+  <% @merchants.each do |merchant| %>
+    <li><%= link_to merchant.name, "/merchants/#{merchant.id}", method: :get, local: true  %></li>
+  <% end %>
+</ul>
