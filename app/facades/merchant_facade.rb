@@ -14,6 +14,10 @@ class MerchantFacade
   end
 
   def self.items
+    json = MerchantService.items(id.to_s)
 
+    json[:data].each do |item_data|
+      Item.new(item_data)
+    end
   end
 end
